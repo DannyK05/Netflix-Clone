@@ -1,2 +1,0 @@
-# Netflix-Clone
-Practicing Git
