@@ -60,7 +60,7 @@ body header #search{
 }
 
 body .home .show{
-  background-image: url(blackish_show.png);
+  background-image: url(../assets/logos/blackish_show.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -68,7 +68,7 @@ body .home .show{
   width: 300px;
 }
 body .home{
-  background-image: url(black-ish.jpg);
+  background-image: url(../assets/logos/black-ish.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -86,7 +86,7 @@ body .home span{
 }
 body .home .abc{
   position: absolute;
-  background-image: url(abcnews_hdv.png);
+  background-image: url(../assets/logos/abcnews_hdv.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
