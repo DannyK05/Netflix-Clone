@@ -1,83 +1,135 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <title>Home</title>
-    <link rel="stylesheet" type='text/css' href="styles/styles.css">
-</head>
-<body>
-  <header>
-    <span class="logo"><a href="#"><img src="assets\logos\download.png" alt=""></a></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <meta name="description" content="A netflix clone project" />
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <span class="logo"
+        ><a href="#"><img src="assets\logos\download.png" alt="" /></a
+      ></span>
 
-  <nav class="navbar">
-    <a href="#">Home</a>
-    <a href="#">TV Shows</a>
-    <a href="#">Movies</a>
-    <a href="#">Latest</a>
-    <a href="#">My List</a>
-  </nav>
-  <label for="search"><ion-icon name="search-outline"></ion-icon></label>
-  <input type="search" id="search" name="search"placeholder="Search">
-  <div class="icons">
-    <span class="bell"><ion-icon name="notifications"></ion-icon></span>
-    <span><ion-icon name="person"></ion-icon></span>
-  </div>
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">TV Shows</a>
+        <a href="#">Movies</a>
+        <a href="#">My List</a>
+      </nav>
+      <label for="search"><ion-icon name="search-outline"></ion-icon></label>
+      <input type="search" id="search" name="search" placeholder="Search" />
+      <div class="icons">
+        <span class="bell"><ion-icon name="notifications"></ion-icon></span>
+        <span><ion-icon name="person"></ion-icon></span>
+      </div>
+    </header>
+    <main>
+      <div id="home" class="home">
+        <div class="abc"></div>
+        <div class="show"></div>
+        <div class="stats">
+          <span>2022</span>
+          <span style="color: red">13</span>
+          <span>Season 8</span>
+          <span>Comedy</span>
+        </div>
+        <div class="body">
+          <p>
+            A family man struggles to gain a sense of cultural identity while
+            raising his kids in a predominantly white,upper-middle-class
+            neighboorhood.
+          </p>
+        </div>
+        <div class="controls">
+          <button type="button" name="button">
+            <ion-icon name="caret-forward-outline"></ion-icon><span>PLAY</span>
+          </button>
+          <button type="button" class="list" name="button">
+            <ion-icon name="add-outline"></ion-icon><span>MY LIST</span>
+          </button>
+        </div>
+      </div>
 
-  </header>
-  <main>
-<div id="home" class="home">
-<div class="abc">
+      <div class="picks">
+        <h1>Top Picks For You</h1>
+        <div class="top">
+          <!-- <button class="slide-button" id="picks-left"><</button> -->
+          <div class="shows_1">
+            <img src="assets\shows\lucifer.jpg" alt="" />
+          </div>
+          <div class="shows_2">
+            <img src="assets\shows\me_time.jpg" alt="" />
+          </div>
+          <div class="shows_3">
+            <img src="assets\shows\grownish.jpg" alt="" />
+          </div>
+          <div class="shows_4">
+            <img src="assets\shows\ginny_georgia.jpg" alt="" />
+          </div>
+          <div class="shows_5">
+            <img src="assets\shows\daredevil.jpg" alt="" />
+          </div>
+          <div class="shows_6"><img src="assets\shows\guard.jpg" alt="" /></div>
+          <div class="shows_7">
+            <img src="assets\shows\imperfects.jpg" alt="" />
+          </div>
+          <div class="shows_8">
+            <img src="assets\shows\irregulars.jpg" alt="" />
+          </div>
+          <!-- <button class="slide-button" id="picks-right">></button> -->
+        </div>
+      </div>
 
-</div>
-  <div class="show">
-
-  </div>
-  <div class="stats">
-  <span>2022</span>
-  <span style="color:red;">13</span>
-  <span>Season 8</span>
-  <span>Comedy</span>
-</div>
-  <div class="body">
-  <p> A family man struggles to gain a sense of cultural identity while  raising his kids in a predominantly white,upper-middle-class neighboorhood.</p> </div>
-  <div class="controls">
-  <button type="button" name="button"><ion-icon name="caret-forward-outline"></ion-icon>PLAY</button>
-  <button type="button" class="list" name="button"><ion-icon name="add-outline"></ion-icon>MY LIST</button>
-</div>
-</div>
-
-<div class="picks">
-  <h1>Top Picks For You</h1>
-<div class="top">
-  <div class="shows_1"><img src="assets\shows\lucifer.jpg" alt="" ></div>
-  <div class="shows_2"><img src="assets\shows\me_time.jpg" alt="" ></div>
-  <div class="shows_3"><img src="assets\shows\grownish.jpg" alt="" ></div>
-  <div class="shows_4"><img src="assets\shows\ginny_georgia.jpg" alt="" ></div>
-  <div class="shows_5"><img src="assets\shows\daredevil.jpg" alt=""></div>
-  <div class="shows_6"><img src="assets\shows\guard.jpg" alt=""></div>
-  <div class="shows_7"><img src="assets\shows\imperfects.jpg" alt=""></div>
-  <div class="shows_8"><img src="assets\shows\irregulars.jpg" alt=""></div>
-  
- </div>
-</div>
-
-<div class="popular">
-  <h1>Popular on Netflix</h1>
-<div class="pop">
-  <div class="shows_1"><img src="assets\shows\squidgame.jpg" alt="" ></div>
-  <div class="shows_2"><img src="assets\shows\euphoria.jpg" alt="" ></div>
-  <div class="shows_3"><img src="assets\shows\troll.jpg" alt="" ></div>
-  <div class="shows_4"><img src="assets\shows\turtles.jpg" alt="" ></div>
-  <div class="shows_5"><img src="assets\shows\strangerthings.jpg" alt=""></div>
-  <div class="shows_6"><img src="assets\shows\gOt.jpg" alt=""></div>
-  <div class="shows_7"><img src="assets\shows\shadow.jpg" alt=""></div>
-  <div class="shows_8"><img src="assets\shows\night.jpeg" alt=""></div>
- </div>
-</div>
-
-</main>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
+      <div class="popular">
+        <h1>Popular on Netflix</h1>
+        <div class="pop">
+          <!-- <button class="slide-button" id="pop-right"><</button> -->
+          <div class="shows_1">
+            <img src="assets\shows\squidgame.jpg" alt="" />
+          </div>
+          <div class="shows_2">
+            <img src="assets\shows\euphoria.jpg" alt="" />
+          </div>
+          <div class="shows_3"><img src="assets\shows\troll.jpg" alt="" /></div>
+          <div class="shows_4">
+            <img src="assets\shows\turtles.jpg" alt="" />
+          </div>
+          <div class="shows_5">
+            <img src="assets\shows\strangerthings.jpg" alt="" />
+          </div>
+          <div class="shows_6"><img src="assets\shows\gOt.jpg" alt="" /></div>
+          <div class="shows_7">
+            <img src="assets\shows\shadow.jpg" alt="" />
+          </div>
+          <div class="shows_8">
+            <img src="assets\shows\night.jpeg" alt="" />
+          </div>
+          <!-- <button class="slide-button" id="pop-left">></button> -->
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        This Clone was built with 💖 by
+        <a
+          title="Github link"
+          target="_blank"
+          href="https://github.com/DannyK05"
+          >Kolade</a
+        >
+      </p>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
