@@ -159,7 +159,7 @@ body .home .list:hover {
   overflow-x: scroll;
 }
 ::-webkit-scrollbar {
-  width: 8px; /* WebKit */
+  width: 8px;
   height: 8px;
 }
 
@@ -244,6 +244,10 @@ footer a:hover {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+  }
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 4px;
   }
   h1 {
     font-size: 16px;
