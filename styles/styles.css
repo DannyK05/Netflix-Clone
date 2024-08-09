@@ -265,9 +265,10 @@ footer a:hover {
     width: 20%;
   }
   body .home {
-    height: auto;
+    height: 50vh;
     width: 100%;
     background-size: cover;
+    padding-top: 120px;
   }
   body .home .abc {
     position: static;
@@ -315,8 +316,8 @@ footer a:hover {
   .shows_6 img,
   .shows_7 img,
   .shows_8 img {
-    width: 150px;
-    height: 84px;
+    width: 200px;
+    height: 120px;
     cursor: pointer;
   }
   .shows_1 img:hover,
@@ -327,8 +328,6 @@ footer a:hover {
   .shows_6 img:hover,
   .shows_7 img:hover,
   .shows_8 img:hover {
-    height: 86px;
-    width: 146px;
     border: 2px solid white;
     transition: border 0.8s;
   }
