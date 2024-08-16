@@ -1,8 +1,12 @@
 * {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "OpenSans", sans-serif;
   transition: 0.5s;
   text-decoration: none;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../assets/fonts/OpenSans-Regular.ttf");
 }
 
 body {
