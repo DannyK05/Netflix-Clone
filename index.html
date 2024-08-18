@@ -6,12 +6,12 @@
     <!-- displays site properly based on user's device -->
     <meta name="description" content="A netflix clone project" />
     <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
   </head>
   <body>
     <header>
       <span class="logo"
-        ><a href="#"><img src="assets\logos\download.png" alt="" /></a
+        ><a href="#"><img src="./assets/logos/download.png" alt="" /></a
       ></span>
 
       <nav class="navbar">
@@ -56,59 +56,145 @@
 
       <div class="picks">
         <h1>Top Picks For You</h1>
-        <div class="top">
-          <!-- <button class="slide-button" id="picks-left"><</button> -->
+        <div id="top" class="top">
+          <button class="slide-button left" id="picks-left">
+            <ion-icon name="caret-back-outline"></ion-icon>
+          </button>
           <div class="shows_1">
-            <img src="assets\shows\lucifer.jpg" alt="" />
+            <img src="assets/shows/top_picks/lucifer.jpg" alt="" />
           </div>
           <div class="shows_2">
-            <img src="assets\shows\me_time.jpg" alt="" />
+            <img src="assets/shows/top_picks/me_time.jpg" alt="" />
           </div>
           <div class="shows_3">
-            <img src="assets\shows\grownish.jpg" alt="" />
+            <img src="assets/shows/top_picks/grownish.jpg" alt="" />
           </div>
           <div class="shows_4">
-            <img src="assets\shows\ginny_georgia.jpg" alt="" />
+            <img src="assets/shows/top_picks/ginny_georgia.jpg" alt="" />
           </div>
           <div class="shows_5">
-            <img src="assets\shows\daredevil.jpg" alt="" />
+            <img src="assets/shows/top_picks/daredevil.jpg" alt="" />
           </div>
-          <div class="shows_6"><img src="assets\shows\guard.jpg" alt="" /></div>
+          <div class="shows_6">
+            <img src="assets/shows/top_picks/guard.jpg" alt="" />
+          </div>
           <div class="shows_7">
-            <img src="assets\shows\imperfects.jpg" alt="" />
+            <img src="assets/shows/top_picks/imperfects.jpg" alt="" />
           </div>
           <div class="shows_8">
-            <img src="assets\shows\irregulars.jpg" alt="" />
+            <img src="assets/shows/top_picks/irregulars.jpg" alt="" />
           </div>
-          <!-- <button class="slide-button" id="picks-right">></button> -->
+          <button class="slide-button right" id="picks-right">
+            <ion-icon name="caret-forward-outline"></ion-icon>
+          </button>
         </div>
       </div>
 
       <div class="popular">
         <h1>Popular on Netflix</h1>
-        <div class="pop">
-          <!-- <button class="slide-button" id="pop-right"><</button> -->
+        <div id="pop" class="pop">
+          <button class="slide-button left" id="pop-left">
+            <ion-icon name="caret-back-outline"></ion-icon>
+          </button>
           <div class="shows_1">
-            <img src="assets\shows\squidgame.jpg" alt="" />
+            <img src="assets/shows/popular_shows/squidgame.jpg" alt="" />
           </div>
           <div class="shows_2">
-            <img src="assets\shows\euphoria.jpg" alt="" />
+            <img src="assets/shows/popular_shows/euphoria.jpg" alt="" />
           </div>
-          <div class="shows_3"><img src="assets\shows\troll.jpg" alt="" /></div>
+          <div class="shows_3">
+            <img src="assets/shows/popular_shows/troll.jpg" alt="" />
+          </div>
           <div class="shows_4">
-            <img src="assets\shows\turtles.jpg" alt="" />
+            <img src="assets/shows/popular_shows/turtles.jpg" alt="" />
           </div>
           <div class="shows_5">
-            <img src="assets\shows\strangerthings.jpg" alt="" />
+            <img src="assets/shows/popular_shows/strangerthings.jpg" alt="" />
           </div>
-          <div class="shows_6"><img src="assets\shows\gOt.jpg" alt="" /></div>
+          <div class="shows_6">
+            <img src="assets/shows/popular_shows/gOt.jpg" alt="" />
+          </div>
           <div class="shows_7">
-            <img src="assets\shows\shadow.jpg" alt="" />
+            <img src="assets/shows/popular_shows/shadow.jpg" alt="" />
           </div>
           <div class="shows_8">
-            <img src="assets\shows\night.jpeg" alt="" />
+            <img src="assets/shows/popular_shows/night.jpeg" alt="" />
           </div>
-          <!-- <button class="slide-button" id="pop-left">></button> -->
+          <button class="slide-button right" id="pop-right">
+            <ion-icon name="caret-forward-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+
+      <div class="nostalgic">
+        <h1>Nostalgic Shows</h1>
+        <div id="nos" class="nos">
+          <button class="slide-button left" id="nos-left">
+            <ion-icon name="caret-back-outline"></ion-icon>
+          </button>
+          <div class="shows_1">
+            <img src="assets/shows/nostalgic_shows/binny.jpg" alt="" />
+          </div>
+          <div class="shows_2">
+            <img src="assets/shows/nostalgic_shows/btr.jpg" alt="" />
+          </div>
+          <div class="shows_3">
+            <img src="assets/shows/nostalgic_shows/drakenjosh.jpg" alt="" />
+          </div>
+          <div class="shows_4">
+            <img src="assets/shows/nostalgic_shows/fredtheshow.webp" alt="" />
+          </div>
+          <div class="shows_5">
+            <img src="assets/shows/nostalgic_shows/icarly.png" alt="" />
+          </div>
+          <div class="shows_6">
+            <img src="assets/shows/nostalgic_shows/labrats.jpg" alt="" />
+          </div>
+          <div class="shows_7">
+            <img src="assets/shows/nostalgic_shows/supahninjas.jpg" alt="" />
+          </div>
+          <div class="shows_8">
+            <img src="assets/shows/nostalgic_shows/victorious.jpg" alt="" />
+          </div>
+          <button class="slide-button right" id="nos-right">
+            <ion-icon name="caret-forward-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+
+      <div class="animation">
+        <h1>00's animations</h1>
+        <div id="ani" class="ani">
+          <button class="slide-button left" id="ani-left">
+            <ion-icon name="caret-back-outline"></ion-icon>
+          </button>
+          <div class="shows_1">
+            <img src="assets/shows/animations/adventuetime.jpg" alt="" />
+          </div>
+          <div class="shows_2">
+            <img src="assets/shows/animations/courage.jpg" alt="" />
+          </div>
+          <div class="shows_3">
+            <img src="assets/shows/animations/fanboy.jpg" alt="" />
+          </div>
+          <div class="shows_4">
+            <img src="assets/shows/animations/robotboy.jpg" alt="" />
+          </div>
+          <div class="shows_5">
+            <img src="assets/shows/animations/secretsaturday.jpg" alt="" />
+          </div>
+          <div class="shows_6">
+            <img src="assets/shows/animations/tda.jpg" alt="" />
+          </div>
+          <div class="shows_7">
+            <img src="assets/shows/animations/tuffpuppy.jpg" alt="" />
+          </div>
+          <div class="shows_8">
+            <img src="assets/shows/animations/unclegrandpa.jpg" alt="" />
+          </div>
+          <button class="slide-button right" id="ani-right">
+            <ion-icon name="caret-forward-outline"></ion-icon>
+          </button>
         </div>
       </div>
     </main>
@@ -123,6 +209,7 @@
         >
       </p>
     </footer>
+    <script src="./scripts/index.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

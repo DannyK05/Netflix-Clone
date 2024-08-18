@@ -1,8 +1,12 @@
 * {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "OpenSans", sans-serif;
   transition: 0.5s;
   text-decoration: none;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../assets/fonts/OpenSans-Regular.ttf");
 }
 
 body {
@@ -140,24 +144,30 @@ body .home .list:hover {
 }
 
 .picks,
-.popular {
+.popular,
+.animation,
+.nostalgic {
   color: white;
+  position: relative;
+  margin-bottom: 10px;
 }
 .picks h1,
-.popular h1 {
+.popular h1,
+.animation h1,
+.nostalgic h1 {
   padding-left: 10px;
+  margin-bottom: 0px;
+  font-size: 24px;
 }
-.top {
-  padding: 5px 0px;
+.top,
+.pop,
+.ani,
+.nos {
+  padding: 5px;
   display: flex;
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 
-.pop {
-  padding-top: 5px;
-  display: flex;
-  overflow-x: scroll;
-}
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -170,6 +180,7 @@ body .home .list:hover {
 
 ::-webkit-scrollbar-thumb {
   background-color: #b3b3b3;
+  cursor: pointer;
   border-radius: 10px;
   transition: background-color 0.3s;
 }
@@ -211,14 +222,32 @@ body .home .list:hover {
 .shows_6 img:hover,
 .shows_7 img:hover,
 .shows_8 img:hover {
-  height: 178px;
-  width: 310px;
   border: 2px solid white;
 }
-/* .slide-button {
-  position: relative;
-  left: 0;
-} */
+.slide-button {
+  position: absolute;
+  display: none;
+  text-align: center;
+  height: 80%;
+  cursor: pointer;
+  color: #e2d8d8;
+  font-size: 36px;
+  background-color: #b3b3b377;
+  border: none;
+  width: 5%;
+}
+.slide-button:hover {
+  background-color: #bdb4b4;
+  color: white;
+}
+
+div button.right {
+  right: 0px;
+}
+
+div button.left {
+  left: 0px;
+}
 footer {
   display: flex;
   align-items: center;
@@ -311,6 +340,23 @@ footer a:hover {
   }
   .top {
     width: 100%;
+  }
+  .top,
+  .pop,
+  .ani,
+  .nos {
+    padding: 5px;
+    display: flex;
+    overflow-x: scroll;
+  }
+  #top button.slide-button,
+  #pop button.slide-button,
+  #ani button.slide-button,
+  #nos button.slide-button {
+    display: none;
+  }
+  .slide-button {
+    display: none;
   }
   .shows_1 img,
   .shows_2 img,
