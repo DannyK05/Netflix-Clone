@@ -148,6 +148,8 @@ body .home .list:hover {
 .animation,
 .nostalgic {
   color: white;
+  position: relative;
+  margin-bottom: 10px;
 }
 .picks h1,
 .popular h1,
@@ -155,7 +157,6 @@ body .home .list:hover {
 .nostalgic h1 {
   padding-left: 10px;
   margin-bottom: 0px;
-  margin-top: 10px;
   font-size: 24px;
 }
 .top,
@@ -164,7 +165,7 @@ body .home .list:hover {
 .nos {
   padding: 5px;
   display: flex;
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -179,6 +180,7 @@ body .home .list:hover {
 
 ::-webkit-scrollbar-thumb {
   background-color: #b3b3b3;
+  cursor: pointer;
   border-radius: 10px;
   transition: background-color 0.3s;
 }
@@ -220,14 +222,32 @@ body .home .list:hover {
 .shows_6 img:hover,
 .shows_7 img:hover,
 .shows_8 img:hover {
-  height: 178px;
-  width: 310px;
   border: 2px solid white;
 }
-/* .slide-button {
-  position: relative;
-  left: 0;
-} */
+.slide-button {
+  position: absolute;
+  display: none;
+  text-align: center;
+  height: 80%;
+  cursor: pointer;
+  color: #e2d8d8;
+  font-size: 36px;
+  background-color: #b3b3b377;
+  border: none;
+  width: 5%;
+}
+.slide-button:hover {
+  background-color: #bdb4b4;
+  color: white;
+}
+
+div button.right {
+  right: 0px;
+}
+
+div button.left {
+  left: 0px;
+}
 footer {
   display: flex;
   align-items: center;
@@ -320,6 +340,23 @@ footer a:hover {
   }
   .top {
     width: 100%;
+  }
+  .top,
+  .pop,
+  .ani,
+  .nos {
+    padding: 5px;
+    display: flex;
+    overflow-x: scroll;
+  }
+  #top button.slide-button,
+  #pop button.slide-button,
+  #ani button.slide-button,
+  #nos button.slide-button {
+    display: none;
+  }
+  .slide-button {
+    display: none;
   }
   .shows_1 img,
   .shows_2 img,
